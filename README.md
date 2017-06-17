@@ -45,7 +45,15 @@ Example:
                 'type' => 'select',
 
                 // the dependent element parent/parents id without the #
+                // the value can be a string or an array;
+                // if it is an array, the array key is used to save the value
+                //the value for the below input can be gotten from $_GET['params']['input1']
                 'parent' => ['input1' => 'input1'],
+
+                OR
+
+                //the value for the below input can be gotten from $_GET['params'][0]
+                // 'parent' => 'input1'
 
                 // the dependent element id without the #
                 'child' => 'input2',
@@ -71,3 +79,6 @@ Example:
 ?>
 
 ```
+
+The request method used is GET; The controller action is passed a params array as the GET parameter
+containing all the parent values which can be identified by their respective keys.
