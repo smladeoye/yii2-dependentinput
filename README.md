@@ -41,7 +41,7 @@ Example:
         // this can be an array containg an array of settings or just one array with the setting
         'options' => [
             [
-                // the dependent element type
+                // the dependent element type - ("select" or "text")
                 'type' => 'select',
 
                 // the dependent element parent/parents id without the #
